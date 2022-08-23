@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href = "@{/CSS/gallery.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link th:href="@{https://fonts.googleapis.com/css2?family=Cabin&family=Corben&family=Noto+Sans&family=Shrikhand&display=swap}" rel="stylesheet">
+<link rel="shortcut icon" th:href="@{/IMAGES/icon.png}" type="image/x-icon" />
+<link
+  rel="stylesheet"
+  th:href="@{https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css}"
+/>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+
+
+    <title>Gallery</title>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <header id="pageHeader">
+         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+        <ul>
+            <li><a th:href="@{/index}">HOME</a></li>
+            <li><a th:href="@{/about}">ABOUT</a></li>
+            <li><a th:href="@{gallery}">GALLERY</a></li>
+            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+            <li><a th:href="@{/l0gin}">LOG IN</a></li>
+        </ul>
+    </header>
+</div>
+
+
+
+<div class="rating" >
+  <div class="container">
+   <h2>Servicing your pet with style, paws down, we are the best around!</h2>
+  </div>
+</div>
+<!-- 
+  <div class="container gallery">
+    <div class="swiper">
+     
+      <div class="swiper-wrapper">
+       
+        <div class="swiper-slide"><img th:src="@{/IMAGES/happycustomer1.jpg}" /></div>
+        <div class="swiper-slide"><img th:src="@{/IMAGES/happycustomer2.jfif}" /></div>
+        <div class="swiper-slide"><img th:src="@{/IMAGES/happycustomer3.jfif}" /></div>
+         <div class="swiper-slide"><img th:src="@{/IMAGES/happycustomer4.jpg}" /></div>
+        <div class="swiper-slide"><img th:src="@{/IMAGES/happycustomer5.jpg}" /></div>
+        <div class="swiper-slide"><img th:src="@{/IMAGES/happycustomer6.jpeg}" /></div>
+        ...
+      </div>
+     
+      <div class="swiper-pagination"></div>
+    
+     
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </div>
+ -->
+  
+  
+  <div class="contains">
+  <div class="heading">
+    <h3>Photo <span>Gallery</span></h3>
+  </div>
+<div class="box">
+
+    <div class="dream">
+      <img th:src="@{/IMAGES/happycustomer16.jpg}">
+      <img th:src="@{/IMAGES/happycustomer1.jpg}">
+      <img th:src="@{/IMAGES/happycustomer3.jpeg}">
+      <img th:src="@{/IMAGES/happycustomer4.jpeg}">
+      <img th:src="@{/IMAGES/happycustomer5.jpeg}">
+    </div> 
+
+    <div class="dream">
+      <img th:src="@{/IMAGES/happycustomer6.jpeg}">
+      <img th:src="@{/IMAGES/happycustomer7.jpeg}">
+      <img th:src="@{/IMAGES/happycustomer8.jpg}">
+      <img th:src="@{/IMAGES/happycustomer9.jpg}">
+      <img th:src="@{/IMAGES/happycustomer10.jpg}">
+    </div>
+
+    <div class="dream">
+      <img th:src="@{/IMAGES/happycustomer11.jpg}">
+      <img th:src="@{/IMAGES/happycustomer12.jpg}">
+      <img th:src="@{/IMAGES/happycustomer13.jpg}">
+      <img th:src="@{/IMAGES/happycustomer15.jpeg}">
+    </div>
+  </div>
+</div>
+
+
+
+<footer id="pageFooter">Pet Grooming 2022</footer>
+<script th:src= "@{https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js}"></script>
+
+<!-- 
+<script>
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+</script>
+ -->
+
+
+
+</body>
+</html>

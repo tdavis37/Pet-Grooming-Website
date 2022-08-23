@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+      <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link th:href="@{https://fonts.googleapis.com/css2?family=Corben&display=swap}" rel="stylesheet">
+<link rel="shortcut icon" th:href="@{/IMAGES/icon.png}" type="image/x-icon" />
+<link th:href = "@{/CSS/services.css}" rel="stylesheet">
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+   
+   
+   <title>Create New Appointment| Pet Grooming</title>
+</head>
+<body>
+	   <div class="container-fluid">
+	   <header id="pageHeader">
+	         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+	        <ul>
+	            <li><a th:href="@{/index}">HOME</a></li>
+	            <li><a th:href="@{/about}">ABOUT</a></li>
+	            <li><a th:href="@{/gallery}">GALLERY</a></li>
+	            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+	            <li><a th:href="@{/l0gin}">LOG IN</a></li>
+	        </ul>
+	    </header>
+	</div>
+	
+	
+	<div align="center">
+	<h2 style = "font-family: 'Corben', cursive!important;
+    color: white;">Create/Update Appointment</h2>
+	<br/>
+	<div class="col-sm-4">
+		<form action="/registerproduct" th:action="@{/save}" th:object="${pet}" method="post">
+		
+		<div align="left">
+			 <tr>
+                <label class="form-label" style = "font-family: 'Corben', cursive!important;
+    color: white;">Pet Type</label>
+                <td>
+                <input type="hidden" th:field="*{id}" />
+                <input type="text" th:field="*{pettype}" class="form-control" placeholder="Pet Type" />
+                </td>
+            </tr>
+        <div align="left">
+        	<tr>
+                 <label class="form-label" style = "font-family: 'Corben', cursive!important;
+    color: white;">Breed</label>
+                <td><input type="text" th:field="*{breed}" class="form-control" placeholder="Breed" /></td>
+            </tr>
+        </div>
+		<div align="left">
+                 <tr>
+                 <label class="form-label" style = "font-family: 'Corben', cursive!important;
+    color: white;">Age</label>
+                <td><input type="text" th:field="*{age}" class="form-control" placeholder="Age" /></td>
+            </tr>
+        </div>
+        
+        <br>
+        
+        <tr>
+            <td colspan="2"><button type="submit" style="font-family: 'Corben', cursive!important; color: #fff; background-color: #ffebbb; border-radius: 15px;">Save</button> </td>
+            </tr>
+		</div>
+			
+	</form>	
+	</div>
+	</div>
+	
+	
+    
+
+</body>
+</html>

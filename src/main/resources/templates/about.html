@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link th:href="@{https://fonts.googleapis.com/css2?family=Corben&display=swap}" rel="stylesheet">
+<link rel="shortcut icon" th:href="@{/IMAGES/icon.png}" type="image/x-icon" />
+   <link th:href = "@{/CSS/about.css}" rel="stylesheet">
+   <link
+  rel="stylesheet"
+  th:href="@{https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css}"
+/>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <title>About</title>
+</head>
+<body>
+
+    <div class="container-fluid">
+    <header id="pageHeader">
+         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+        <ul>
+            <li><a th:href="@{/index}">HOME</a></li>
+            <li><a th:href="@{/about}">ABOUT</a></li>
+            <li><a th:href="@{/gallery}">GALLERY</a></li>
+            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+            <li><a th:href="@{/l0gin}">LOG IN</a></li>
+        </ul>
+    </header>
+</div>
+    
+    <div id="container">
+        <div class="left">
+        	<div class="jumbotron">
+    			<div class="container" style="position:absolute; top: 95px;">
+    			<h1>SERVICES</h1>
+    			<p>HAIRCUT<img src="/IMAGES/icon.png" style="position:relative; left: 0px; top:-2px;" class="img-fluid" width="20" height="20"></p>
+    			<p>BATHING<img src="/IMAGES/icon.png" style="position:relative; left: 0px; top:-2px;" class="img-fluid" width="20" height="20"></p>
+    			<p>NAIL TRIM<img src="/IMAGES/icon.png" style="position:relative; left: 0px; top:-2px;" class="img-fluid" width="20" height="20"></p>
+
+				
+				<br>
+    				<h1>CONTACT US</h1>
+    				<p> 9764 Jeopardy Lane, Chicago, Illinois</p>
+    				<p>petgrooming@gmail.com</p>
+    				<p>call or text (123)456-7890</p>
+    			</div>
+    		</div>
+        
+        </div>
+    
+        <div class="right"><img class="resize" th:src="@{/IMAGES/dogandcat.jpg}"></div>
+
+    </div>
+   
+<script th:src= "@{https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js}"></script>
+
+
+<script>
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  
+});
+</script>
+</body>
+</html>
+

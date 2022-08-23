@@ -1,0 +1,328 @@
+/* CSS Color Pallete  */
+.first-color { 
+	background: #e0ffcd; 
+}
+	
+.second-color { 
+	background: #fdffcd; 
+}
+
+.third-color { 
+	background: #ffebbb; 
+}
+
+.fourth-color { 
+	background: #ffcab0; 
+}
+/* CSS Color Pallete  */
+img {
+	max-width: 20%;
+	min-width: 20%;
+}
+
+
+.box {
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(213, 213, 213)!important;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+}
+
+html * { 
+	color: #fff !important;
+	font-family: 'Corben', cursive !important;
+  font-weight: 400;
+	}
+
+body main {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+html, body {
+   
+    margin: 0;
+    padding: 0;
+    font-family: 'Corben', cursive!important;
+    font-weight: 400;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../IMAGES/pets.jpg);
+    /* background-color: #fdffcd; */
+  }
+
+
+  th {
+  	color: #6D584F!important;
+  
+  	}
+  /* color: #717600;​ */
+
+  .container-fluid {
+    width: 100%;
+    height: 80px;
+    background-color: #ffebbb;
+  }
+  
+  #pageHeader h2 {
+    font-family: 'Corben', cursive!important;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #pageHeader h2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #pageHeader ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pageHeader ul li {
+    list-style: none;
+  }
+  #pageHeader ul li a {
+    font-family: 'Corben', cursive!important;
+    color: #fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #pageHeader ul li:nth-child(4) a{
+    color: #6D584F;
+  }
+
+
+  #pageHeader ul li:hover {
+    color: #6D584F;
+  }
+
+  #pageHeader ul li a:hover {
+    color: #6D584F;
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+
+  
+  .jumbotron {
+   	width: 600px;
+    height: 600px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgb(238, 236, 236);
+    margin: auto;
+    padding: 50px;
+    background-size: cover;
+  }
+  p {
+    color: #fff
+  }
+
+  .jumbotron p {
+    font-family: 'Corben', cursive!important;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 30px;
+  }
+
+  .jumbotron .containter p {
+    color: #6D584F
+  }
+  
+  .jumbotron .btn {
+    font-family: 'Corben', cursive!important;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+
+  .jumbotron .btn a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .jumbotron .btn:hover {
+    background-color: #ffebbb;
+  }
+  h1 {
+    color: #fff;
+  }
+  
+  .btn-main {
+    background-color: #ffebbb;
+    color: #fff;
+    font-family: 'Corben', cursive!important;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 16px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .containter .btn-main {
+    transition: 0.5s;
+  }
+  
+  .btn-main:hover {
+    background-color: #b3a78b;
+    font-size: 18px;
+  }
+  .btn-default {
+    font-family: 'Corben', cursive!important;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    margin-bottom: 20px;      
+  }
+ /* used grid here */
+ 
+  header {
+    background-color: #ffebbb
+  }
+
+
+
+  #pageHeader {
+    grid-area: header;
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+  }
+
+
+
+h3 {
+    color: #fff!important;
+}
+
+.start {
+  color: white;
+}
+
+
+.field-group{
+  width: 300px;
+  float: left;
+  padding: 5px;
+}
+.row {
+  width: 980px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.select-label{
+	font-family: 'Corben', cursive!important;
+	font-size: 16px;
+	color: #ffffff;
+}
+
+
+.book {
+  margin-top: 43px;
+}
+.select-field{
+  font-family: 'Corben', cursive!important;
+  
+  width: 100%;
+  outline: 0;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 15px 15px;
+  font-size: 0.86em;
+  color: #171717;
+  background: #fff;
+  background-image: linear-gradient(#fff, #fff),
+                      linear-gradient(-135deg, transparent 50%, #ffebbb 50%),
+                      linear-gradient(-225deg, transparent 50%, #ffebbb 50%),
+                      linear-gradient(#ffebbb 40%, #fff 40%);
+  background-repeat: no-repeat;
+  background-size: 1px 100%, 50px 40px, 50px 40px, 50px 100%;
+  background-position: right 50px center, right bottom, right bottom, right bottom;
+  -webkit-appearance: none;
+  appearance: none;
+  
+}
+
+.select-field:hover{
+  background-image: linear-gradient(#fff, #fff),
+                      linear-gradient(-135deg, transparent 50%, #fff 50%),
+                      linear-gradient(-225deg, transparent 50%, #fff 50%),
+                      linear-gradient(#fff 40%, #ffebbb 40%);
+}
+.select-field:active{
+  background-image: linear-gradient(#fff, #fff),
+                      linear-gradient(-135deg, transparent 50%, #fff 50%),
+                      linear-gradient(-225deg, transparent 50%, #fff 50%),
+                      linear-gradient(#fff 40%, #fff 40%);
+  color: #ffebbb;
+  border-color: #fff;
+  background-color: #fff;
+}
+.select-field option:checked{
+  background-color: #ffebbb;
+}
+
+button {
+  font-family: 'Corben', cursive!important;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 13.5px 50px;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  background-color: #ffebbb;
+  margin-right: 16px;
+  margin-top: 30px;
+  transition: 500ms ease all;
+}
+
+
+
+button:hover {
+	transform: scale(1.06) perspective(1px);
+}

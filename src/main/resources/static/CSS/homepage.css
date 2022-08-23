@@ -1,0 +1,268 @@
+/* CSS Color Pallete  */
+.first-color { 
+	background: #e0ffcd; 
+}
+	
+.second-color { 
+	background: #fdffcd; 
+}
+
+.third-color { 
+	background: #ffebbb; 
+}
+
+.fourth-color { 
+	background: #ffcab0; 
+}
+/* CSS Color Pallete  */
+
+html * { 
+	color: #fff !important;
+	font-family: 'Corben', cursive !important;
+  font-weight: 400;
+	}
+	
+
+body main {
+  background-repeat: no-repeat;
+  background-image: url(../IMAGES/pets.jpg);
+  background-size: cover;
+}
+
+html, body {
+   
+    margin: 0;
+    padding: 0;
+    font-family: 'Corben', cursive;
+    font-weight: 400;
+    height: 100vh;
+    background-color: #e0ffcd;
+  }
+  
+  
+  /* color: #717600;​ */
+
+  .container-fluid {
+    width: 100%;
+    height: 80px;
+    background-color: #ffebbb;
+  }
+  
+  #pageHeader h2 {
+    font-family: 'Corben', cursive;
+    font-size: 30px;
+    color: rgb(224, 59, 59);
+    cursor: pointer;
+  }
+
+  #pageHeader h2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #pageHeader ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pageHeader ul li {
+    list-style: none;
+  }
+  #pageHeader ul li a {
+    font-family: 'Corben', cursive;
+    color: #fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #pageHeader ul li:nth-child(1) a{
+    color: #6D584F!important;
+  }
+
+
+  #pageHeader ul li a:hover {
+    color: #6D584F!important;
+  }
+
+  #pageHeader ul li a:hover {
+    color: #6D584F!important;
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+  
+  
+  
+ 
+
+  
+  .jumbotron {
+    width: 1200px;
+    height: 100vh;
+    margin: auto;
+    padding: 50px;
+    background-size: cover;
+  }
+  p {
+    color: #fff
+  }
+
+  .jumbotron p {
+    font-family: 'Corben', cursive;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .jumbotron .containter p {
+    color: #6D584F;
+  }
+  
+  .jumbotron .btn {
+    font-family: 'Corben', cursive;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+
+  .jumbotron .btn a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .jumbotron .btn:hover {
+    background-color: #ffebbb;
+  }
+  h1 {
+    color: #fff;
+  }
+  
+  .btn-main {
+    background-color: #ffebbb;
+    color: #fff;
+    font-family: 'Corben', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 165px;
+  }
+  
+  .containter .btn-main {
+    transition: 0.5s;
+  }
+  
+  .btn-main:hover {
+    background-color: #b3a78b;
+    font-size: 18px;
+  }
+  
+  .btn-default {
+    font-family: 'Corben', cursive;;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    margin-bottom: 20px;      
+  }
+ /* used grid here */
+  footer {
+    padding: 20px;
+    background-color: #ffebbb
+  }
+
+  header {
+    background-color: #ffebbb
+  }
+
+  #pageFooter {
+    grid-area: footer;
+    color: #fff;
+  }
+
+  #pageHeader {
+    grid-area: header;
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    min-width: 100px;
+  }
+
+  .supporting,
+.rating,
+.gallery,
+.location {
+  margin: auto;
+  background-color: #e0ffcd;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.rating h1 {
+  color: #707070;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 18px;
+}
+
+.rating p {
+  color: #707070;
+  font-weight: 600;
+  font-size: 18px;
+}
+.container2 {
+  max-width: 200px;
+  margin: 0 auto;
+  background-color: #e0ffcd;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+
+.swiper {
+  width: 60%;
+  height: fit-content;
+}
+
+.swiper-slide img {
+  width: 100%;
+}
+
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+  color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: #fff;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href = "@{/CSS/homepage.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link th:href="@{https://fonts.googleapis.com/css2?family=Corben&display=swap}" rel="stylesheet">
+<link rel="shortcut icon" th:href="@{/IMAGES/icon.png}" type="image/x-icon" />
+<link
+  rel="stylesheet"
+  th:href="@{https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css}"
+/>
+<link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+
+
+    <title>Homepage</title>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <header id="pageHeader">
+         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+        <ul>
+            <li><a th:href="@{/index}">HOME</a></li>
+            <li><a th:href="@{/about}">ABOUT</a></li>
+            <li><a th:href="@{/gallery}">GALLERY</a></li>
+            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+            <li><a th:href="@{/l0gin}">LOG IN</a></li>
+        </ul>
+    </header>
+</div>
+
+<main>
+  <div class="jumbotron">
+    <div class="container" style="position:absolute;">  
+      <h1>Welcome to Pet Grooming</h1>
+      <a th:href="@{/l0gin}" class="btn-main"> Get Started </a>
+      <p>Fun fact! From the time of Charles Darwin (1809-1882), there has been discussion about how dogs came to be man’s best friend. Dogs were domesticated sometime between 18,800 and 32,100 years ago.<br></p>
+      <button class="btn"><a th:href="@{https://www.guinnessworldrecords.com/world-records/first-domestication-of-dogs}">Learn more</a></button>
+    </div>
+  </div>
+</main>
+
+
+
+ 
+
+
+
+<footer id="pageFooter">Pet Grooming 2022</footer>
+<script th:src= "@{https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js}"></script>
+<script th:src="@{/JS/index.js}"></script>
+
+
+</body>
+</html>
