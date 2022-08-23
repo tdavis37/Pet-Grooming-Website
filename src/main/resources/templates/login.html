@@ -1,28 +1,81 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
-<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
-<link th:href="@{https://fonts.googleapis.com/css2?family=Corben&display=swap}" rel="stylesheet">
-<link rel="shortcut icon" th:href= "@{/IMAGES/icon.png}" type="image/x-icon" />
-    <title>Login Page</title>
+<meta charset="ISO-8859-1">
+<title>Registration and Login App</title>
+
+<link rel="stylesheet"
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+ crossorigin="anonymous">
+ 
 </head>
 <body>
-	<h1>Login to Pet Grooming</h1>
-	<form th:action="@{/login}" method="post" style="max-width: 400px; margin: 0 auto;">
-    <p>
-        E-mail: <input type="email" name="username" required />  
-    </p>
-    <p>
-        Password: <input type="password" name="password" required />
-    </p>
-    <p>
-        <input type="submit" value="Login" />
-    </p>
-</form>
+
+ <!-- create navigation bar ( header) -->
+ <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+   <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed"
+     data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+     aria-controls="navbar">
+     <span class="sr-only">Toggle navigation</span> <span
+      class="icon-bar"></span> <span class="icon-bar"></span> <span
+      class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#" th:href="@{/}">Registration and
+     Login Module</a>
+   </div>
+  </div>
+ </nav>
+ 
+ <br>
+ <br>
+ <div class = "container">
+  <div class = "row">
+   <div class = "col-md-6 col-md-offset-3">
+    
+    <h1> User Login Page </h1>
+    <form th:action="@{/login}" method="post">
+     
+     <!-- error message -->
+     <div th:if="${param.error}">
+      <div class="alert alert-danger">Invalid username or
+       password.</div>
+     </div>
+    
+     <!-- logout message -->
+     <div th:if="${param.logout}">
+      <div class="alert alert-info">You have been logged out.</div>
+     </div>
+     
+     <div class = "form-group">
+      <label for ="username"> Username </label> :
+      <input type="text" class = "form-control" id ="username" name = "username"
+      placeholder="Enter Email ID" autofocus="autofocus">
+     </div>
+     
+     <div class="form-group">
+      <label for="password">Password</label>: <input type="password"
+       id="password" name="password" class="form-control"
+       placeholder="Enter Password" />
+     </div>
+     
+     <div class="form-group">
+      <div class="row">
+       <div class="col-sm-6 col-sm-offset-3">
+        <input type="submit" name="login-submit" id="login-submit"
+         class="form-control btn btn-primary" value="Log In" />
+       </div>
+      </div>
+     </div>
+    </form>
+    <div class="form-group">
+      <span>New user? <a href="/" th:href="@{/registration}">Register
+        here</a></span>
+    </div>
+   </div>
+  </div>
+ </div>
 </body>
 </html>
