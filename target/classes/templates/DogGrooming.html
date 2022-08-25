@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link th:href="@{https://fonts.googleapis.com/css2?family=Corben&display=swap}" rel="stylesheet">
+<link rel="shortcut icon" th:href="@{/IMAGES/icon.png}" type="image/x-icon" />
+<link th:href = "@{/CSS/services.css}" rel="stylesheet">
+
+
+
+    <title>Services</title>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <header id="pageHeader">
+         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+        <ul>
+            <li><a th:href="@{/index}">HOME</a></li>
+            <li><a th:href="@{/about}">ABOUT</a></li>
+            <li><a th:href="@{gallery}">GALLERY</a></li>
+            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+            <li><a th:href="@{/l0gin}">LOG IN</a></li>
+        </ul>
+    </header>
+</div>
+
+
+<div class="row">
+    <div class="field-group">
+        <label for="options" class="select-label">Pet Type</label>
+        <select name="options" id="cmbPetType" class="select-field">
+            <option value="-1">Pet type</option>
+            <option value="Dog">Dog</option>
+        </select>
+    </div>
+    
+    <div class="field-group">
+        <label for="options" class="select-label">Breed</label>
+        <select name="options" id="cmbBreed" class="select-field">
+            <option value="-1">Breed</option>
+            <option value="American Eskimo">American Eskimo</option>
+            <option value="Bearded Collie">Bearded Collie</option>
+            <option value="Chihuahua">Chihuahua</option>
+            <option value="Golden Retriever">Golden Retriever</option>
+            <option value="Yorkshire Terrier">Yorkshire Terrier</option>
+        </select>
+    </div>
+    
+    <div class="field-group">
+        <label for="options" class="select-label">Age</label>
+        <select name="options" id="cmbAge" class="select-field">
+            <option value="-1">Age</option>
+            <option value="2 months - 5 months">2 months - 5 months</option>
+            <option value="6 months or older">6 months or older</option>
+        </select>
+    </div>
+    
+   <div class="field-group">
+   		<button th:onclick="bookNowClick(event);">Book now</button>
+   </div>
+    
+</div>
+
+<div class="jumbotron">
+    <div class="container"> 
+	<h2 style="color:#fff;">How do I book a grooming appointment online?</h2>
+	<p>At the top of the screen you will see a drop-list of options. Select the appropriate pet type, dog or cat based on your pet. Select breed and age. Then click “Book Now”. </p>
+	</div>
+</div>
+
+
+
+<!-- <select class="dropdown"> 442
+    <option value="" class="Pet type">Pet Type</option>
+    <option value="1">Dog</option>
+    <option value="2">Cat</option>
+  </select> 
+  
+  <select class="dropdown">
+    <option value="" class="label2">Age</option>
+    <option value="1">8 weeks - 5 months</option>
+    <option value="2">6 months or older</option>
+  </select>  -->
+
+
+<script th:src= "@{/JS/services.js}"></script>
+<!-- JQuery linked below -->
+<script th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js}"></script>
+<script th:src="@{js/jquery.easydropdown.js}" type="text/javascript"></script>
+</body>
+</html>

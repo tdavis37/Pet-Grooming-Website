@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html * { 
+	color: #fff!important;
+	font-family: 'Corben', cursive!important;
+  font-weight: 400;
+	}
+	
+#container {
+    min-height: 100vh;
+    display: flex;
+}
+
+#container2 {
+	min-height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 50vw;
+    background-color: #f9f6f6;
+    color: #6D584F!important;
+}
+
+.right {
+    width: 50vw;
+    background-color: #fff;
+}
+
+ .resize {
+    width: 675px;
+    height: auto;
+}
+
+.container-fluid {
+    width: 100%;
+    height: 80px;
+    background-color: #ffebbb;
+  }
+
+  #pageHeader h2 {
+    font-family: 'Corben', cursive!important;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #pageHeader h2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #pageHeader ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pageHeader ul li {
+    list-style: none;
+  }
+  #pageHeader ul li a {
+    font-family: 'Corben', cursive!important;
+    color: #fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+  }
+
+  #pageHeader ul li:nth-child(2) a{
+    color: #6D584F!important;
+  }
+
+
+  #pageHeader ul li:hover {
+    color: #6D584F!important;
+  }
+
+  #pageHeader ul li a:hover {
+    color: #6D584F!important;
+  }
+
+  main {
+    text-align: center;
+    position: relative;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    height: 80px;
+    background-color: #ffebbb;
+  }
+  
+  #pageHeader h2 {
+    font-family: 'Corben', cursive!important;
+    font-size: 30px;
+    color: rgb(224, 59, 59);
+    cursor: pointer;
+  }
+
+  #pageHeader h2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #pageHeader ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #pageHeader ul li {
+    list-style: none;
+  }
+  #pageHeader ul li a {
+    font-family: 'Corben', cursive!important;
+    color: #fff;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+ 
+
+  
+  .jumbotron {
+    width: 1200px;
+    height: 100vh;
+    /* margin: -278px;​ */
+    padding: 0px;
+    background-size: cover;
+    text-align: center!important;
+    display: block;
+  	margin-left: -234px;
+  	margin-right: auto;
+ 	 width: 40%;
+  }
+  p {
+    color: #6D584F!important;
+    text-align: center!important;
+  }
+
+  .jumbotron p {
+    font-family: 'Corben', cursive!important;
+    font-weight: bold;
+    line-height: 30px;
+    padding-top: 10px;
+    text-align: left;
+  }
+
+  .jumbotron .containter p {
+    color: #6D584F;
+  }
+  
+  
+  .jumbotron .btn {
+    font-family: 'Corben', cursive;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+
+  .jumbotron .btn a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .jumbotron .btn:hover {
+    background-color: #ffebbb;
+  }
+  h1 {
+    color: #6D584F!important;
+  }
+  
+  .btn-main {
+    background-color: #ffebbb;
+    color: #fff;
+    font-family: 'Corben', cursive;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.3px;
+    padding: 10px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 165px;
+  }
+  
+  .containter .btn-main {
+    transition: 0.5s;
+  }
+  
+  .btn-main:hover {
+    background-color: #b3a78b;
+    font-size: 18px;
+  }
+  
+  .btn-default {
+    font-family: 'Corben', cursive;;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 1.3px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;  
+    margin-bottom: 20px;      
+  }
+ /* used grid here */
+  footer {
+    padding: 20px;
+    background-color: #ffebbb
+  }
+
+  header {
+    background-color: #ffebbb
+  }
+
+  #pageFooter {
+    grid-area: footer;
+    color: #fff;
+  }
+
+  #pageHeader {
+    grid-area: header;
+    width: 1200px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    min-width: 100px;
+  }
+  
+  
+ 

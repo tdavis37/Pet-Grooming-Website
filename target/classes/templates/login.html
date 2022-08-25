@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href = "@{/CSS/l0gin.css}" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link th:href="@{https://fonts.googleapis.com/css2?family=Corben&display=swap}" rel="stylesheet">
+<link rel="shortcut icon" th:href= "@{/IMAGES/icon.png}" type="image/x-icon" />
+    <title>Login Page</title>
+
+<body>
+
+
+<div class="container-fluid">
+    <header id="pageHeader">
+         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+        <ul>
+			<li><a th:href="@{/index}">HOME</a></li>
+            <li><a th:href="@{/about}">ABOUT</a></li>
+            <li><a th:href="@{/gallery}">GALLERY</a></li>
+            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+            <li><a th:href="@{/login}">LOG IN</a></li>
+        </ul>
+    </header>
+</div>
+
+<main>
+
+  <div class="jumbotron">
+    <div class="container">
+
+            <form class="form" th:action="@{/login}" method="post" name="Login">
+              <div class="head">
+                <div th:onclick="swap(this);" data-tab="login" class="login-tab">
+                  LOGIN
+                </div>
+                <div th:onclick="swap(this);" data-tab="signup" class="signup-tab">
+                  SIGNUP
+                </div>
+
+              </div>
+              <div class="body" id="form-body">
+                <div class="login">
+                  <div class="form-row">
+					
+					<div th:if="${param.logout}">
+      <div class="alert alert-info">You have been logged out.</div>
+     </div>
+
+                    <input id="txtEmail" type="email" placeholder="Email" name = "username">
+                    
+                    <input style="margin-bottom: 30px; font-family: 'Corben', cursive !important;" id="txtPassword" type="password" placeholder="Password" name = "password">
+                   <input class="login-input" type="submit" value="Login">
+                    <!--  <a th:href="@{/services.html}">
+                    	<button th:onclick="authenticate(event);">Login</button>
+                    </a>-->
+                    <div class="span">
+                      <span>
+                        OR
+                      </span>
+                      <div class="footer">
+                        <div class="social-form insta">
+                          <i class="fa-brands fa-instagram" th:href="servicesDC" ></i>&ensp; &ensp; Login with Instagram
+                        </div>
+                        <div class="social-form twitter">
+                          <i class="fa-brands fa-twitter" th:href="servicesDC"></i>Login with Twitter
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+				
+                <div class="signup">
+                  <div class="form-row" th:action=@{/registration}>
+                    <input id="firstName" type="text" placeholder="First Name">
+                    <input id="lastName" type="text" placeholder="Last Name">
+                    <input id="email" type="email" autocomplete="none" placeholder="Email">
+                    <input id="password" type="password" placeholder="Password" >
+                    <input id="password" type="password" placeholder="Re-enter Password">
+                    <h2 style="font-size: 10px;">Password Strength </h2>
+                    <div class="progress"><progress max="100" value="0" id="strength" style="width: 230px"></progress></div>
+					
+					
+					<csrf disabled="true"/>
+<!-- 					<input class="login-input" type="submit" value="registration"> -->
+<!--                   </div> -->
+                </div>
+
+              </div>
+            </form>
+
+    </div>
+  </div>
+  
+  
+            
+</main>
+
+<footer id="pageFooter">Pet Grooming 2022</footer>
+<script  th:src="@{/JS/login.js}"></script>
+</body>
+</html>

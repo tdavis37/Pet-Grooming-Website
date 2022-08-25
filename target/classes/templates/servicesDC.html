@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" th:href="@{https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css}" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" th:href="@{https://fonts.googleapis.com}">
+<link rel="preconnect" th:href="@{https://fonts.gstatic.com}" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+<link rel="shortcut icon" th:href="@{/IMAGES/icon.png}" type="image/x-icon" />
+   <link th:href = "@{/CSS/servicesDC.css}" rel="stylesheet">
+
+
+
+    <title>Our Services | Pet Grooming</title>
+</head>
+
+<body>
+
+
+	   <div class="container-fluid">
+	   <header id="pageHeader">
+	         <h2><a th:href="@{/login}">Pet Grooming</a></h2>
+	        <ul>
+	            <li><a th:href="@{/index}">HOME</a></li>
+	            <li><a th:href="@{/about}">ABOUT</a></li>
+	            <li><a th:href="@{/gallery}">GALLERY</a></li>
+	            <li><a th:href="@{/CatGrooming}">SERVICES</a></li>
+	            <li><a th:href="@{/login}">LOG IN</a></li>
+	        </ul>
+	    </header>
+	</div>
+
+    <div class="center">
+        <div class="columns">
+            <h2>Dog Grooming</h2>
+            <div class="box2">
+              <a th:href="@{/DogGrooming}" target="_blank"><img class="image2" th:src="@{/IMAGES/sophie.jpg}" /></a>
+              </div>
+          </div>
+    
+        <div class="columns">
+            <h2>Cat Grooming</h2>
+            <div class="box">
+              <a th:href="@{/CatGrooming}" target="_blank"><img class="image" th:src="@{/IMAGES/cleo.jpg}" /></a>
+              </div>
+          </div>
+    </div>
+	
+	<div class="center">
+		<h2 style="color: #6D584F;">Choose your service type</h2>
+	</div>
+
+
+</body>
+</html>
