@@ -1,0 +1,34 @@
+.space {
+    width:50px;
+    margin:0 auto; 
+  }
+
+  .navbar-nav {
+    width: 150px;
+    height: 400 px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .dropdown-item {
+    color: #9C6E00!important;;
+  }
+  a {
+    font-size: 20px;
+  }
+  section{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  .navbar-nav {
+    margin-left: auto;
+  }
+  .profile {
+    margin-top: 15px;
+    margin-bottom:-10px;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }

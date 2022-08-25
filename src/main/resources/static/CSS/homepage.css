@@ -23,6 +23,7 @@ html * {
 	}
 	
 
+
 body main {
   background-repeat: no-repeat;
   background-image: url(../IMAGES/pets.jpg);
@@ -145,6 +146,9 @@ html, body {
   .jumbotron .btn a {
     text-decoration: none;
     color: #fff;
+  }
+  a:hover {
+  	color: #6D584F!important;
   }
 
   .jumbotron .btn:hover {

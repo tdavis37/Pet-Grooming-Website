@@ -12,9 +12,9 @@
 <link rel="shortcut icon" th:href= "@{/IMAGES/icon.png}" type="image/x-icon" />
     <title>Registration Page</title>
 </head>
-<body>
+<body style="background-image:url('IMAGES/pets.jpg')">
 <!-- create navigation bar ( header) -->
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #ffebbb;">
   <div class="container">
    <div class="navbar-header">
     <button type="button" class="navbar-toggle collapsed"
@@ -47,31 +47,41 @@
     
     <form th:action="@{/registration}" method="post" th:object="${user}">
 	     <div class="form-group">
-	      <label class="control-label" for="firstName"> First Name </label>
+	      <label class="control-label" for="firstName" style="color: #fff;"> First Name </label>
 	      <input id="firstName" class="form-control" th:field="*{firstName}"
 	       required autofocus="autofocus" />
 	     </div>
 	
 	     <div class="form-group">
-	      <label class="control-label" for="lastName"> Last Name </label> <input
+	      <label class="control-label" for="lastName" style="color: #fff;"> Last Name </label> <input
 	       id="lastName" class="form-control" th:field="*{lastName}"
 	       required autofocus="autofocus" />
 	     </div>
 	    
 	     <div class="form-group">
-	      <label class="control-label" for="email"> Email </label> <input
+	      <label class="control-label" for="email" style="color: #fff;"> Email </label> <input
 	       id="email" class="form-control" th:field="*{email}" required
 	       autofocus="autofocus" />
 	     </div>
 	
 	     <div class="form-group">
-	      <label class="control-label" for="password"> Password </label> <input
+	      <label class="control-label" for="password" style="color: #fff;"> Password </label> <input
 	       id="password" class="form-control" type="password"
 	       th:field="*{password}" required autofocus="autofocus" />
 	     </div>
 	     
 	     <div class="form-group">
-	      <button type="submit" class="btn btn-success">Register</button>
+	      <button type="submit" class="btn btn-success" style="color: #fff; font-family: 'Corben', cursive;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;">Register</button>
 	      <span>Already registered? <a href="/" th:href="@{/login}">Login
 	        here</a></span>
 	     </div>

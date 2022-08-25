@@ -301,12 +301,39 @@ h3 {
     border: none;
     color: #fff!important;
     background-color: #ffebbb;
-    margin-top: 30px;
+    margin-top: -9px;
     transition: 500ms ease all;
+}
+
+.progress {
+	margin-top: -9px;
 }
 
 .form .body .form-row button:hover {
   background-color:  #d89e85;
+}
+
+.form .body .form-row button:hover {
+  background-color:  #d89e85;
+}
+
+input.login-input {
+	color: #fff;
+}
+
+.login-input {
+	 background-color:  #ffebbb;
+	 border-radius: 30px;
+}
+
+.form .body .form-row input {
+	font-family: 'Corben', cursive;
+	font-size: 17px;
+	height: 40px;
+}
+
+.login-input:hover {
+	background-color:  #d89e85;
 }
 
 .form .body .signup .form-row button {
@@ -316,6 +343,8 @@ h3 {
 .form .body .signup .form-row button:hover {
   background-color: #d89e85;
 }
+
+
 .form .body .rem-row {
   padding:10px;
   border-top:1px solid #ccc;

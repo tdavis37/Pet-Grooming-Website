@@ -47,24 +47,12 @@ public class PetGroomingController {
 		return "gallery";
 	}
 	
-	@RequestMapping("/l0gin")
-	public String l0gin() {
-		return "l0gin";
-	}
-	
 	@RequestMapping("/login")
 	public String login() {
 		return "login";
 	}
 	
-	@RequestMapping("/register")
-	public String register() {
-		return "register";
-	}
 
-	
-	
-	
 	@RequestMapping("/registerproduct")
 	public String registerproduct(Model model, @RequestParam String petType, @RequestParam String breed, @RequestParam String age) {
 		Pets pets = new Pets();
